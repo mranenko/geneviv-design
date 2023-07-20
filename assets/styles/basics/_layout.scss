@@ -1,0 +1,103 @@
+#main,
+#nav {
+  padding: 2rem 2rem 4rem;
+}
+
+
+#main {
+  background: color(neutral, 1);
+  color: color(black);
+  padding-left: 5rem;
+}
+
+
+#nav {
+  background: color(neutral, 2);
+  color: color(black);
+  height: 100vh;
+  left: -16rem;
+  position: fixed;
+  top: 0;
+  transition: left .5s;
+  width: 16rem;
+  z-index: 1;
+}
+
+#nav.active {
+  left: 0;
+}
+
+#nav a:not(.header):not(.toggle) {
+  display: block;
+  font-size: font(small, size);
+  font-weight: font(small, weight);
+  margin: 0 -2rem .125rem;
+  padding: .375rem 2rem;
+}
+
+#nav a:hover:not(.active):not(.header):not(.toggle) {
+  background: color(neutral, 4);
+  color: color(white);
+}
+
+#nav a.active:not(.loheadero):not(.toggle) {
+  background: color(neutral, 3);
+  border-left: .25rem solid color(primary);
+  font-weight: font(strong, weight);
+  padding-left: 1.75rem;
+}
+
+#nav .header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#nav .logo {
+  @include size(12rem, auto);
+}
+
+#nav .toggle {
+  align-items: center;
+  background: color(neutral, 3);
+  color: color(black);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  right: -3rem;
+  top: 0;
+  width: 3rem;
+}
+
+#nav .toggle:hover {
+  background: color(neutral);
+  color: color(white);
+}
+
+#nav .toggle i {
+  transition: transform .5s;
+}
+
+#nav.active .toggle i {
+  transform: rotate(180deg);
+}
+
+
+@media (min-width: 50rem) {
+  #nav,
+  #nav.active {
+    left: 0;
+  }
+
+  #nav .toggle,
+  #nav.active .toggle {
+    display: none;
+  }
+
+  #main {
+    padding-left: 18rem;
+  }
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@400;600&display=swap');
+
+
+/*
+  fonts by group
+*/
+
+$fonts: (
+  small: (
+    size: .875rem,
+    weight: 400,
+  ),
+
+  strong: (
+    weight: 500,
+  ),
+
+  text: (
+    family: #{'Glory', sans-serif},
+    line-height: 1.5,
+    size: 1rem,
+    weight: 400,
+  ),
+
+  title: (
+    family: #{'Glory', sans-serif},
+    line-height: 1.25,
+    size: (
+      display: 4rem,
+      1: 2rem,
+      2: 1.625rem,
+      3: 1.25rem,
+      4: 1rem,
+      5: .875rem,
+      6: .75rem,
+    ),
+    weight: 600,
+  ),
+);
+
+
+/*
+  font accessor function
+*/
+
+@function font($keys...) {
+  $value: $fonts;
+
+  @each $key in $keys {
+    $value: map-get($value, $key);
+  }
+
+  @return $value;
+}
