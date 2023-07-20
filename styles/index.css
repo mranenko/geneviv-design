@@ -13,7 +13,13 @@
 /*
   color by element property
 */
-@import url("https://fonts.googleapis.com/css2?family=Glory:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "Strasua";
+  src: url("../../assets/fonts/Strasua.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
   fonts by group
 */
@@ -728,6 +734,37 @@ ul.icons-preview li {
 }
 
 /*
+  logo preview list
+*/
+ul.logo-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+/*
+  logo preview item
+*/
+.logo-preview {
+  background: #e3e3e8;
+  color: #3b3b4c;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.logo-preview .logo {
+  height: auto;
+  width: 100%;
+}
+
+/*
   font preview list
 */
 ul.font-preview-list {
@@ -755,6 +792,7 @@ ul.font-preview-list {
 
 .font-preview .sample {
   font-size: 5rem;
+  line-height: 1;
   text-align: right;
 }
 
@@ -763,7 +801,10 @@ ul.font-preview-list {
 */
 .font-glory {
   font-family: "Glory", sans-serif;
-  line-height: 1;
+}
+
+.font-strasua {
+  font-family: "Strasua", sans-serif;
 }
 
 /*
