@@ -1,7 +1,6 @@
 input[type="text"],
 input.text,
 .input.text,
-input.textarea,
 textarea,
 .textarea {
   background: color(neutral, 2);
@@ -16,7 +15,8 @@ textarea,
 input[type="text"],
 input.text,
 .input.text {
-  line-height: 1.125rem;
+  height: 3rem;
+  line-height: 1rem;
 }
 
 label,
@@ -25,10 +25,9 @@ label,
   font-weight: font(small, weight);
 }
 
-input.textarea,
 textarea,
 .textarea {
-  height: 4.25rem;
+  height: 6.5rem;
   resize: none;
 }
 

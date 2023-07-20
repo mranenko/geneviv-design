@@ -10,6 +10,14 @@
   padding-left: 5rem;
 }
 
+#main .subtitle {
+  margin: 0 0 1.25rem;
+}
+
+#main .title {
+  margin: 0 0 1.5rem;
+}
+
 
 #nav {
   background: color(neutral, 2);
@@ -85,6 +93,13 @@
   transform: rotate(180deg);
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 2rem;
+  width: 100%;
+}
+
 
 @media (min-width: 50rem) {
   #nav,
@@ -99,5 +114,9 @@
 
   #main {
     padding-left: 18rem;
+  }
+  
+  .content {
+    padding: 3rem;
   }
 }

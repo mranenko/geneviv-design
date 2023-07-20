@@ -4,10 +4,10 @@
 
 .button {
   @include background(color(primary), color(white));
-  @include size(auto, 3.5rem);
+  @include size(auto, 3rem);
   align-items: center;
   border: 0;
-  border-radius: 1.75rem;
+  border-radius: .5rem;
   cursor: pointer;
   display: inline-flex;
   font: inherit;
@@ -17,6 +17,15 @@
   justify-content: center;
   line-height: 1rem;
   padding: 0 2rem;
+  white-space: nowrap;
+}
+
+.button.neutral {
+  @include background(color(neutral), color(white));
+}
+
+.button.white {
+  @include background(color(white), color(primary));
 }
 
 

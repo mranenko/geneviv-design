@@ -134,6 +134,14 @@ hr {
   padding-left: 5rem;
 }
 
+#main .subtitle {
+  margin: 0 0 1.25rem;
+}
+
+#main .title {
+  margin: 0 0 1.5rem;
+}
+
 #nav {
   background: #e3e3e8;
   color: #3b3b4c;
@@ -209,6 +217,13 @@ hr {
   transform: rotate(180deg);
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 2rem;
+  width: 100%;
+}
+
 @media (min-width: 50rem) {
   #nav,
   #nav.active {
@@ -220,6 +235,9 @@ hr {
   }
   #main {
     padding-left: 18rem;
+  }
+  .content {
+    padding: 3rem;
   }
 }
 /*
@@ -356,11 +374,11 @@ hr {
 .button {
   background: #11053c;
   color: #fdfdfe;
-  height: 3.5rem;
+  height: 3rem;
   width: auto;
   align-items: center;
   border: 0;
-  border-radius: 1.75rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   display: inline-flex;
   font: inherit;
@@ -370,6 +388,17 @@ hr {
   justify-content: center;
   line-height: 1rem;
   padding: 0 2rem;
+  white-space: nowrap;
+}
+
+.button.neutral {
+  background: #63637e;
+  color: #fdfdfe;
+}
+
+.button.white {
+  background: #fdfdfe;
+  color: #11053c;
 }
 
 /*
@@ -393,10 +422,84 @@ hr {
   gap: 1rem;
 }
 
+footer {
+  background: #11053c;
+  color: #fdfdfe;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+footer .logo {
+  height: 1.5rem;
+  width: auto;
+}
+
+footer .nav {
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+footer .section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 50rem) {
+  footer .content {
+    gap: 3rem;
+  }
+  footer .section {
+    gap: 1.5rem;
+  }
+}
+header {
+  background: #fdfdfe;
+  color: #11053c;
+  box-shadow: 0 0 1rem 0 rgba(59, 59, 76, 0.15);
+}
+
+header .content {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+header .logo {
+  height: 2rem;
+  width: auto;
+}
+
+header .nav {
+  display: none;
+  gap: 1.5rem;
+  text-transform: uppercase;
+}
+
+header .nav-toggle {
+  font-size: 2rem;
+}
+
+@media (min-width: 50rem) {
+  header .nav {
+    display: flex;
+  }
+  header .nav-toggle {
+    display: none;
+  }
+}
 input[type=text],
 input.text,
 .input.text,
-input.textarea,
 textarea,
 .textarea {
   background: #e3e3e8;
@@ -411,7 +514,8 @@ textarea,
 input[type=text],
 input.text,
 .input.text {
-  line-height: 1.125rem;
+  height: 3rem;
+  line-height: 1rem;
 }
 
 label,
@@ -420,10 +524,9 @@ label,
   font-weight: 400;
 }
 
-input.textarea,
 textarea,
 .textarea {
-  height: 4.25rem;
+  height: 6.5rem;
   resize: none;
 }
 
