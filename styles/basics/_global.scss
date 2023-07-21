@@ -26,7 +26,11 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-.link { color: color(primary); }
+
+.link {
+  color: color(primary);
+  font-weight: font(strong, weight);
+}
 
 small,
 .small {
@@ -46,6 +50,7 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle {
   margin: 0 0 .5rem;
 }
 
+h1, h2 { text-transform: uppercase; }
 h1 { font-size: font(title, size, 1); }
 h2 { font-size: font(title, size, 2); }
 h3 { font-size: font(title, size, 3); }

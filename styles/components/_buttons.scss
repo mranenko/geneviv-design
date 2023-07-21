@@ -30,6 +30,28 @@
 
 
 /*
+  large download buttons
+*/
+
+.button.large {
+  gap: .75rem;
+  height: 4rem;
+}
+
+.button.large i {
+  font-size: 2.5rem;
+}
+
+.button.large .label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  gap: .125rem;
+  text-align: left;
+}
+
+
+/*
   link buttons
 */
 

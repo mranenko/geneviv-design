@@ -58,6 +58,7 @@ a {
 
 .link {
   color: #11053c;
+  font-weight: 500;
 }
 
 small,
@@ -73,9 +74,13 @@ strong,
 
 h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: Glory, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.25;
   margin: 0 0 0.5rem;
+}
+
+h1, h2 {
+  text-transform: uppercase;
 }
 
 h1 {
@@ -83,11 +88,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 h4 {
@@ -134,17 +139,17 @@ hr {
   padding-left: 5rem;
 }
 
-#main .subtitle {
-  margin: 0 0 1.25rem;
-}
-
+#main .subtitle,
 #main .title {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
 }
 
 #nav {
   background: #e3e3e8;
   color: #3b3b4c;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   height: 100vh;
   left: -16rem;
   position: fixed;
@@ -402,6 +407,26 @@ hr {
 }
 
 /*
+  large download buttons
+*/
+.button.large {
+  gap: 0.75rem;
+  height: 4rem;
+}
+
+.button.large i {
+  font-size: 2.5rem;
+}
+
+.button.large .label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  gap: 0.125rem;
+  text-align: left;
+}
+
+/*
   link buttons
 */
 .button.link {
@@ -430,7 +455,9 @@ footer {
 footer .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -453,14 +480,15 @@ footer .section {
   text-align: center;
 }
 
-@media (min-width: 50rem) {
-  footer .content {
-    gap: 3rem;
-  }
-  footer .section {
-    gap: 1.5rem;
-  }
+footer .section.social {
+  gap: 1.5rem;
 }
+
+footer .input-row {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
 header {
   background: #fdfdfe;
   color: #11053c;
@@ -541,7 +569,8 @@ textarea,
 
 .input-row {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  width: 100%;
 }
 
 /*

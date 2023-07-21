@@ -5,7 +5,9 @@ footer {
 footer .content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -27,13 +29,11 @@ footer .section {
   text-align: center;
 }
 
+footer .section.social {
+  gap: 1.5rem;
+}
 
-@media (min-width: 50rem) {
-  footer .content {
-    gap: 3rem;
-  }
-
-  footer .section {
-    gap: 1.5rem;
-  }
+footer .input-row {
+  margin: 0 auto;
+  max-width: 40rem;
 }
