@@ -1,6 +1,4 @@
-<!--
 <img src="assets/images/screenshots/jenevive-design.png" alt="" style="margin: 0 auto; max-width: 100%;" />
--->
 
 # Design system - Jenevive
 
