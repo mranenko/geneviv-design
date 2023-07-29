@@ -2,7 +2,16 @@
 
 # Design system - Jenevive
 
-Design system for a responsive medical startup website using HTML + SCSS.
+Design system for a responsive medical startup website using HTML + SCSS + JavaScript.
+
+---
+
+
+## Demo
+
+- [jenevive-design.netlify.app](https://jenevive-design.netlify.app)
+
+---
 
 
 ## Development
@@ -23,10 +32,3 @@ Note: This project was created with node 18.16.0 and npm 9.5.1.
 ```bash
   npm start
 ```
-
----
-
-
-## View demo
-
-- <a href="https://jenevive-design.netlify.app" target="_blank">jenevive-design.netlify.app</a>

@@ -1,33 +1,26 @@
-#main,
-#nav {
-  padding: 2rem 2rem 4rem;
+:root {
+  --nav--toggle-width: 3rem;
+  --nav-width: 16rem;
 }
 
 
 #main {
-  background: color(neutral, 1);
-  color: color(black);
-  padding-left: 5rem;
+  @include background(color(neutral, 1), color(black));
+  padding-left: var(--nav--toggle-width);
 }
 
-#main .subtitle,
-#main .title {
-  margin: 0 0 1rem;
-}
+#main .subtitle { margin: 0 0 1.5rem; }
+#main .title { margin: 0 0 1rem; }
 
 
 #nav {
-  background: color(neutral, 2);
-  color: color(black);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  @include background(color(neutral, 2), color(black));
   height: 100vh;
-  left: -16rem;
+  left: #{calc(-1*var(--nav-width))};
   position: fixed;
   top: 0;
   transition: left .5s;
-  width: 16rem;
+  width: var(--nav-width);
   z-index: 1;
 }
 
@@ -44,15 +37,22 @@
 }
 
 #nav a:hover:not(.active):not(.header):not(.toggle) {
-  background: color(neutral, 4);
-  color: color(white);
+  @include background(color(neutral), color(white));
 }
 
-#nav a.active:not(.loheadero):not(.toggle) {
+#nav a.active:not(.header):not(.toggle) {
   background: color(neutral, 3);
   border-left: .25rem solid color(primary);
   font-weight: font(strong, weight);
   padding-left: 1.75rem;
+}
+
+#nav .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #nav .header {
@@ -67,22 +67,20 @@
 }
 
 #nav .toggle {
+  @include background(color(neutral, 3), color(black));
   align-items: center;
-  background: color(neutral, 3);
-  color: color(black);
   cursor: pointer;
   display: flex;
   justify-content: center;
   height: 100vh;
   position: absolute;
-  right: -3rem;
+  right: #{calc(-1*var(--nav--toggle-width))};;
   top: 0;
-  width: 3rem;
+  width: var(--nav--toggle-width);
 }
 
 #nav .toggle:hover {
-  background: color(neutral);
-  color: color(white);
+  @include background(color(neutral), color(white));
 }
 
 #nav .toggle i {
@@ -91,13 +89,6 @@
 
 #nav.active .toggle i {
   transform: rotate(180deg);
-}
-
-.content {
-  margin: 0 auto;
-  max-width: 75rem;
-  padding: 2rem;
-  width: 100%;
 }
 
 
@@ -113,10 +104,6 @@
   }
 
   #main {
-    padding-left: 18rem;
-  }
-  
-  .content {
-    padding: 3rem;
+    padding-left: var(--nav-width);
   }
 }
