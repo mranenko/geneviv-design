@@ -9,7 +9,7 @@
   },
   "scripts": {
     "sass": "sass --watch styles",
-    "server": "live-server --open=index.html --port=20238",
+    "server": "live-server --open=/ --port=20238",
     "start": "npm run sass & npm run server"
   }
 }
