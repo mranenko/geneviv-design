@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  background: #f4f4f6;
+  background: #fdfdfe;
   color: #3b3b4c;
   font-family: Glory, sans-serif;
   font-size: 1rem;
@@ -123,7 +123,7 @@ ul li {
 }
 
 hr {
-  border: 0 solid #d0d0d8;
+  border: 0 solid #d8d8df;
   border-width: 1px 0 0;
   margin: 2rem 0;
 }
@@ -134,7 +134,7 @@ hr {
 }
 
 #main {
-  background: #f4f4f6;
+  background: #fdfdfe;
   color: #3b3b4c;
   padding-left: var(--nav--toggle-width);
 }
@@ -148,7 +148,7 @@ hr {
 }
 
 #nav {
-  background: #e3e3e8;
+  background: #f4f4f6;
   color: #3b3b4c;
   height: 100vh;
   left: calc(-1 * var(--nav-width));
@@ -177,7 +177,7 @@ hr {
 }
 
 #nav a.active:not(.header):not(.toggle) {
-  background: #d0d0d8;
+  background: #e6e6ea;
   border-left: 0.25rem solid #11053c;
   font-weight: 500;
   padding-left: 1.75rem;
@@ -204,7 +204,7 @@ hr {
 }
 
 #nav .toggle {
-  background: #d0d0d8;
+  background: #e6e6ea;
   color: #3b3b4c;
   align-items: center;
   cursor: pointer;
@@ -292,6 +292,13 @@ hr {
 
 .inline-block {
   display: inline-block;
+}
+
+/*
+  color
+*/
+.color-white {
+  color: #fdfdfe;
 }
 
 /*
@@ -435,6 +442,10 @@ hr {
   padding: 0;
 }
 
+.button.link.white {
+  color: #fdfdfe;
+}
+
 /*
   button row
 */
@@ -442,7 +453,8 @@ hr {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 :root {
@@ -545,7 +557,7 @@ input.text,
 .input.text,
 textarea,
 .textarea {
-  background: #e3e3e8;
+  background: #f4f4f6;
   border: 0;
   border-radius: 0.5rem;
   color: #3b3b4c;
@@ -580,6 +592,7 @@ textarea,
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  width: 100%;
 }
 
 .input-row {
@@ -725,7 +738,7 @@ textarea,
 }
 
 .swatch.white {
-  border: 1px solid #d0d0d8;
+  border: 1px solid #d8d8df;
   color: #3b3b4c;
 }
 
@@ -759,7 +772,7 @@ textarea,
 }
 
 .swatch.neutral-2 {
-  background: #e3e3e8;
+  background: #e6e6ea;
   font-size: 0.875rem;
   font-weight: 400;
   position: relative;
@@ -775,7 +788,7 @@ textarea,
   justify-content: center;
 }
 .swatch.neutral-2::after {
-  content: "neutral-2 #e3e3e8";
+  content: "neutral-2 #e6e6ea";
   left: 0;
   overflow: visible;
   padding: 0 1rem;
@@ -785,7 +798,7 @@ textarea,
 }
 
 .swatch.neutral-3 {
-  background: #d0d0d8;
+  background: #d8d8df;
   font-size: 0.875rem;
   font-weight: 400;
   position: relative;
@@ -801,7 +814,7 @@ textarea,
   justify-content: center;
 }
 .swatch.neutral-3::after {
-  content: "neutral-3 #d0d0d8";
+  content: "neutral-3 #d8d8df";
   left: 0;
   overflow: visible;
   padding: 0 1rem;
@@ -838,7 +851,7 @@ textarea,
 
 .swatch.neutral-1,
 .swatch.neutral-2 {
-  border: 1px solid #d0d0d8;
+  border: 1px solid #d8d8df;
 }
 
 .swatch.neutral-4 {
@@ -866,7 +879,7 @@ ul.icons-preview li {
   icon preview item
 */
 .icon-preview {
-  background: #e3e3e8;
+  background: #e6e6ea;
   color: #3b3b4c;
   height: 6rem;
   width: 6rem;
@@ -895,7 +908,7 @@ ul.logo-preview-list {
   logo preview item
 */
 .logo-preview {
-  background: #e3e3e8;
+  background: #e6e6ea;
   color: #3b3b4c;
   height: 12rem;
   width: 12rem;
@@ -926,7 +939,7 @@ ul.font-preview-list {
   font preview item
 */
 .font-preview {
-  background: #e3e3e8;
+  background: #e6e6ea;
   color: #3b3b4c;
   height: 10rem;
   width: 10rem;
@@ -958,7 +971,7 @@ ul.font-preview-list {
   font detail list
 */
 .font-detail-list {
-  border-top: 1px dotted #d0d0d8;
+  border-top: 1px dotted #d8d8df;
   display: grid;
   margin: 2rem 0;
   max-width: 40rem;
@@ -966,7 +979,7 @@ ul.font-preview-list {
 
 .font-detail-row {
   align-items: center;
-  border-bottom: 1px dotted #d0d0d8;
+  border-bottom: 1px dotted #d8d8df;
   display: grid;
   gap: 1rem;
   grid-auto-flow: row;

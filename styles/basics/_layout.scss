@@ -5,7 +5,7 @@
 
 
 #main {
-  @include background(color(neutral, 1), color(black));
+  @include background(color(white), color(black));
   padding-left: var(--nav--toggle-width);
 }
 
@@ -14,7 +14,7 @@
 
 
 #nav {
-  @include background(color(neutral, 2), color(black));
+  @include background(color(neutral, 1), color(black));
   height: 100vh;
   left: #{calc(-1*var(--nav-width))};
   position: fixed;
@@ -41,7 +41,7 @@
 }
 
 #nav a.active:not(.header):not(.toggle) {
-  background: color(neutral, 3);
+  background: color(neutral, 2);
   border-left: .25rem solid color(primary);
   font-weight: font(strong, weight);
   padding-left: 1.75rem;
@@ -67,7 +67,7 @@
 }
 
 #nav .toggle {
-  @include background(color(neutral, 3), color(black));
+  @include background(color(neutral, 2), color(black));
   align-items: center;
   cursor: pointer;
   display: flex;

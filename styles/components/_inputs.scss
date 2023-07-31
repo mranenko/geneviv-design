@@ -3,7 +3,7 @@ input.text,
 .input.text,
 textarea,
 .textarea {
-  background: color(neutral, 2);
+  background: color(neutral, 1);
   border: 0;
   border-radius: .5rem;
   color: color(black);
@@ -40,6 +40,7 @@ textarea,
   display: flex;
   flex-direction: column;
   gap: .25rem;
+  width: 100%;
 }
 
 .input-row {
