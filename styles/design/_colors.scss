@@ -65,6 +65,7 @@ $swatches-neutral: (
   2: color(neutral, 2),
   3: color(neutral, 3),
   4: color(neutral, 4),
+  5: color(neutral, 5),
 );
 
 @each $name, $color in $swatches-neutral {
@@ -74,11 +75,13 @@ $swatches-neutral: (
   }
 }
 
-.swatch.neutral-1,
-.swatch.neutral-2 {
-  border: 1px solid color(border);
-}
+.swatch {
+  &.neutral-1,
+  &.neutral-2 {
+    border: 1px solid color(border);
+  }
 
-.swatch.neutral-4 {
-  color: color(white);
+  &.neutral-5 {
+    color: color(white);
+  }
 }

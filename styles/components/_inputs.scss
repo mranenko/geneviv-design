@@ -3,10 +3,9 @@ input.text,
 .input.text,
 textarea,
 .textarea {
-  background: color(neutral, 1);
+  @include background(color(neutral, 2), color(black));
   border: 0;
   border-radius: .5rem;
-  color: color(black);
   font: inherit;
   padding: 1rem;
   width: 100%;

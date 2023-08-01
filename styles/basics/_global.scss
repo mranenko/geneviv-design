@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  @include background(color(white), color(black));
+  @include background(color(neutral, 1), color(black));
   font-family: font(text, family);
   font-size: font(text, size);
   font-weight: font(text, weight);
