@@ -85,3 +85,15 @@ $swatches-neutral: (
     color: color(white);
   }
 }
+
+
+/*
+  swatch preview list
+*/
+
+ul.swatch-preview-list {
+  @include flex(row, 1rem);
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+}

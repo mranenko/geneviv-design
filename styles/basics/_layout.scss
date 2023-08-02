@@ -1,12 +1,12 @@
 :root {
-  --nav--toggle-width: 3rem;
+  --nav-toggle-width: 3rem;
   --nav-width: 16rem;
 }
 
 
 #main {
   @include background(color(neutral, 1), color(black));
-  padding-left: var(--nav--toggle-width);
+  padding-left: var(--nav-toggle-width);
   .subtitle { margin: 0 0 1.5rem; }
   .title { margin: 0 0 1rem; }
 }
@@ -14,28 +14,21 @@
 
 #nav {
   @include background(color(neutral, 2), color(black));
-  height: 100vh;
-  left: #{calc(-1*var(--nav-width))};
-  position: fixed;
-  top: 0;
+  @include position(fixed, 0, auto, auto, #{calc(-1*var(--nav-width))});
+  @include size(var(--nav-width), 100vh);
   transition: left .5s;
-  width: var(--nav-width);
   z-index: 1;
   &.active { left: 0; }
 
   .content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    @include flex(column, 1.5rem);
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
   .header {
+    @include flex(column, 1rem);
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .logo {
@@ -65,15 +58,12 @@
 #nav {
   .toggle {
     @include background(color(neutral, 3), color(black));
+    @include flex;
+    @include position(absolute, 0, #{calc(-1*var(--nav-toggle-width))});
+    @include size(var(--nav-toggle-width), 100vh);
     align-items: center;
     cursor: pointer;
-    display: flex;
     justify-content: center;
-    height: 100vh;
-    position: absolute;
-    right: #{calc(-1*var(--nav--toggle-width))};
-    top: 0;
-    width: var(--nav--toggle-width);
     &:hover { @include background(color(neutral, 4), color(black)); }
   }
 
@@ -83,15 +73,15 @@
 
 
 @media (min-width: 50rem) {
+  #main {
+    padding-left: var(--nav-width);
+  }
+
+  
   #nav {
     &, &.active {
       left: 0;
       .toggle { display: none; }
     }
-  }
-
-
-  #main {
-    padding-left: var(--nav-width);
   }
 }

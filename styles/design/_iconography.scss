@@ -3,9 +3,8 @@
 */
 
 ul.icons-preview {
-  display: flex;
+  @include flex(row, 1rem);
   flex-wrap: wrap;
-  gap: 1rem;
   list-style: none;
   margin: 0;
 }

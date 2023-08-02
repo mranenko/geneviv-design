@@ -3,6 +3,20 @@
   color: $color;
 }
 
+@mixin flex($direction: row, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin position($position, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+  bottom: $bottom;
+  left: $left;
+  position: $position;
+  right: $right;
+  top: $top;
+}
+
 @mixin size($width, $height: $width) {
   height: $height;
   width: $width;
