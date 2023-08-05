@@ -1,6 +1,6 @@
-<img src="assets/images/screenshots/jenevive-design.png" alt="" style="margin: 0 auto; max-width: 100%;" />
+<img src="assets/images/screenshots/genevive-design.png" alt="" style="margin: 0 auto; max-width: 100%;" />
 
-# Design system - Jenevive
+# Design system - Genevive
 
 Design system for a responsive medical startup website using HTML + SCSS + JavaScript.
 
@@ -9,7 +9,7 @@ Design system for a responsive medical startup website using HTML + SCSS + JavaS
 
 ## Demo
 
-- [jenevive-design.netlify.app](https://jenevive-design.netlify.app)
+- [genevive-design.netlify.app](https://genevive-design.netlify.app)
 
 ---
 
