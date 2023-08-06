@@ -139,6 +139,9 @@ hr {
   color: #3b3b4c;
   padding-left: var(--nav-toggle-width);
 }
+#main .subtitle, #main .title {
+  color: #11053c;
+}
 #main .subtitle {
   margin: 0 0 1.5rem;
 }

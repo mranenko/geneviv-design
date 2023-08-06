@@ -7,6 +7,7 @@
 #main {
   @include background(color(neutral, 1), color(black));
   padding-left: var(--nav-toggle-width);
+  .subtitle, .title { color: color(primary); }
   .subtitle { margin: 0 0 1.5rem; }
   .title { margin: 0 0 1rem; }
 }
