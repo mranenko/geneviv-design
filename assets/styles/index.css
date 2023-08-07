@@ -182,6 +182,9 @@ hr {
   height: auto;
   width: 12rem;
 }
+#nav .subtitle, #nav .title {
+  color: #11053c;
+}
 
 #nav a:not(.header):not(.toggle) {
   display: block;
@@ -414,22 +417,46 @@ hr {
   large download buttons
 */
 .button.large {
-  gap: 0.75rem;
-  height: 4rem;
+  height: 3.5rem;
+  width: auto;
+  gap: 0.5rem;
+  padding: 0 1.125rem;
 }
-
 .button.large i {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
-
 .button.large .label {
   display: flex;
   flex-direction: column;
-  gap: 0.125rem;
-  font-size: 1.125rem;
+  gap: 0;
+  cursor: inherit;
+  font-size: 1rem;
   text-align: left;
 }
+.button.large .label small {
+  font-size: 0.75rem;
+}
 
+@media (min-width: 50rem) {
+  .button.large {
+    height: 4rem;
+    width: auto;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  .button.large i {
+    font-size: 2rem;
+  }
+  .button.large .label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    font-size: 1.125rem;
+  }
+  .button.large .label small {
+    font-size: 0.875rem;
+  }
+}
 /*
   link buttons
 */
@@ -451,7 +478,7 @@ hr {
 .button-row {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;

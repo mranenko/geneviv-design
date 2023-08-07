@@ -35,6 +35,8 @@
   .logo {
     @include size(12rem, auto);
   }
+  
+  .subtitle, .title { color: color(primary); }
 }
 
 #nav a:not(.header):not(.toggle) {
