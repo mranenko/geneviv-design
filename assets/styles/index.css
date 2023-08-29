@@ -57,7 +57,7 @@ a {
 }
 
 .link {
-  color: #11053c;
+  color: #110343;
   font-weight: 500;
 }
 
@@ -140,7 +140,7 @@ hr {
   padding-left: var(--nav-toggle-width);
 }
 #main .subtitle, #main .title {
-  color: #11053c;
+  color: #110343;
 }
 #main .subtitle {
   margin: 0 0 1.5rem;
@@ -184,7 +184,7 @@ hr {
   position: absolute;
   right: auto;
   top: auto;
-  background: #11053c;
+  background: #110343;
   color: #fdfdfe;
   height: auto;
   width: 100%;
@@ -203,7 +203,7 @@ hr {
   width: 12rem;
 }
 #nav .subtitle, #nav .title {
-  color: #11053c;
+  color: #110343;
 }
 
 #nav a:not(.header):not(.link-website):not(.toggle) {
@@ -221,7 +221,7 @@ hr {
 
 #nav a.active:not(.header):not(.toggle) {
   background: #dddde3;
-  border-left: 0.25rem solid #11053c;
+  border-left: 0.25rem solid #110343;
   font-weight: 500;
   padding-left: 1.75rem;
 }
@@ -404,7 +404,7 @@ hr {
   default buttons
 */
 .button {
-  background: #11053c;
+  background: #110343;
   color: #fdfdfe;
   height: 3rem;
   width: auto;
@@ -430,7 +430,7 @@ hr {
 
 .button.white {
   background: #fdfdfe;
-  color: #11053c;
+  color: #110343;
 }
 
 /*
@@ -482,7 +482,7 @@ hr {
 */
 .button.link {
   background: none;
-  color: #11053c;
+  color: #110343;
   height: 2.5rem;
   width: auto;
   padding: 0;
@@ -525,7 +525,7 @@ hr {
 }
 
 footer {
-  background: #11053c;
+  background: #110343;
   color: #fdfdfe;
 }
 footer .content {
@@ -563,7 +563,7 @@ footer .section.social {
 
 header {
   background: #fdfdfe;
-  color: #11053c;
+  color: #110343;
   box-shadow: 0 0 1rem 0 rgba(59, 59, 76, 0.15);
 }
 header .content {
@@ -665,7 +665,7 @@ textarea,
   initial color swatches
 */
 .swatch.primary {
-  background: #11053c;
+  background: #110343;
   font-size: 0.875rem;
   font-weight: 400;
   position: relative;
@@ -677,21 +677,21 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.primary::after {
-  content: "primary #11053c";
+  content: "primary #110343";
   left: 0;
   overflow: visible;
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.accent {
-  background: #09aca2;
+  background: #008079;
   font-size: 0.875rem;
   font-weight: 400;
   position: relative;
@@ -703,17 +703,17 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.accent::after {
-  content: "accent #09aca2";
+  content: "accent #008079";
   left: 0;
   overflow: visible;
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.black {
@@ -729,7 +729,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.black::after {
@@ -739,7 +739,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.neutral {
@@ -755,7 +755,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.neutral::after {
@@ -765,7 +765,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.white {
@@ -781,7 +781,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.white::after {
@@ -791,11 +791,70 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.white {
   border: 1px solid #dddde3;
+  color: #3b3b4c;
+}
+
+/*
+  accent color swatches
+*/
+.swatch.accent-1 {
+  background: #66b3af;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfe;
+}
+.swatch.accent-1, .swatch.accent-1::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+}
+.swatch.accent-1::after {
+  content: "accent-1 #66b3af";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: calc(100% - 2rem);
+}
+
+.swatch.accent-2 {
+  background: #008079;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: relative;
+  word-spacing: 100vw;
+  color: #fdfdfe;
+}
+.swatch.accent-2, .swatch.accent-2::after {
+  height: 6rem;
+  width: 6rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  justify-content: center;
+}
+.swatch.accent-2::after {
+  content: "accent-2 #008079";
+  left: 0;
+  overflow: visible;
+  padding: 0 1rem;
+  position: absolute;
+  text-align: left;
+  width: calc(100% - 2rem);
+}
+
+.swatch.accent-1 {
   color: #3b3b4c;
 }
 
@@ -815,7 +874,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.neutral-1::after {
@@ -825,7 +884,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.neutral-2 {
@@ -841,7 +900,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.neutral-2::after {
@@ -851,7 +910,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.neutral-3 {
@@ -867,7 +926,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.neutral-3::after {
@@ -877,7 +936,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.neutral-4 {
@@ -893,7 +952,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.neutral-4::after {
@@ -903,7 +962,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.neutral-5 {
@@ -919,7 +978,7 @@ textarea,
   width: 6rem;
   align-items: center;
   border-radius: 0.5rem;
-  display: inline-grid;
+  display: inline-flex;
   justify-content: center;
 }
 .swatch.neutral-5::after {
@@ -929,7 +988,7 @@ textarea,
   padding: 0 1rem;
   position: absolute;
   text-align: left;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 .swatch.neutral-1, .swatch.neutral-2 {

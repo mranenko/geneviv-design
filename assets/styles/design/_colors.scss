@@ -15,7 +15,7 @@
     @include size(6rem);
     align-items: center;
     border-radius: .5rem;
-    display: inline-grid;
+    display: inline-flex;
     justify-content: center;
   }
 
@@ -26,7 +26,7 @@
     padding: 0 1rem;
     position: absolute;
     text-align: left;
-    width: 100%;
+    width: #{calc(100% - 2rem)};
   }
 }
 
@@ -53,6 +53,29 @@ $swatches-initial: (
 .swatch.white {
   border: 1px solid color(border);
   color: color(black);
+}
+
+
+/*
+  accent color swatches
+*/
+
+$swatches-accent: (
+  1: color(accent, 1),
+  2: color(accent, 2),
+);
+
+@each $name, $color in $swatches-accent {
+  .swatch.#{'accent-' + $name} {
+    @include swatch(#{'accent-' + $name}, $color);
+    color: color(white);
+  }
+}
+
+.swatch {
+  &.accent-1 {
+    color: color(black);
+  }
 }
 
 
