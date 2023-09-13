@@ -13,6 +13,11 @@ ul.icons-preview li {
   display: inline-flex;
   flex-direction: column;
   gap: .5rem;
+
+  small {
+    max-width: 6rem;
+    text-overflow: ellipsis;
+  }
 }
 
 

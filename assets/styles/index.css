@@ -1027,6 +1027,10 @@ ul.icons-preview li {
   flex-direction: column;
   gap: 0.5rem;
 }
+ul.icons-preview li small {
+  max-width: 6rem;
+  text-overflow: ellipsis;
+}
 
 /*
   icon preview item
